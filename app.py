@@ -36,9 +36,9 @@ def makeWebhookResult(req):
     filmname = parameters.get("film_name")
 
     film_info={'Diep Vien Bao Thu':'Link: http://www.phimmoi.net/phim/diep-vien-bao-thu-i3-5741/'}
-    film_info2={'Diep Vien Bao Thu':'Thời Lượng: 114 Phút'}
-     film_info3={'Diep Vien Bao Thu':'Chất Lượng: HD'}
-    speech = "Thông tin bộ phim" + filmname + ":" + str(film_info[filmname]) + str(film_info2[filmname])+ str(film_info3[filmname])
+    film_info2={'Diep Vien Bao Thu':'Time: 114 minutes'}
+    film_info3={'Diep Vien Bao Thu':'Quality: HD'}
+    speech = "Infomation" + filmname + ":" + str(film_info[filmname]) + str(film_info2[filmname])+ str(film_info3[filmname])
     print("Response:")
     print(speech)
     return {
@@ -48,7 +48,6 @@ def makeWebhookResult(req):
         #"contextOut": [],
         "source": "NVPBOT"
     }
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
