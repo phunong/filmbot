@@ -34,7 +34,7 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     filmname = parameters.get("film_name")
-    speech ="Thông Tin Phim" +"\nTên Phim" +filmname
+    speech ="Thông Tin Phim" +"\nTên Phim" + filmname +"\n Tôi Tên Là :NVP"
     #neu duoc thì sqlite sai
 #     film_info={'Diep Vien Bao Thu':'Link: http://www.phimmoi.net/phim/diep-vien-bao-thu-i3-5741/'}
 #     film_info2={'Diep Vien Bao Thu':'Time: 114 minutes'}
