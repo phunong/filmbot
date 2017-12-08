@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# -*- coding: utf-8 -*-
 import urllib
 import json
 import os
@@ -38,7 +38,7 @@ def makeWebhookResult(req):
     film_info={'Diep Vien Bao Thu':'Link: http://www.phimmoi.net/phim/diep-vien-bao-thu-i3-5741/'}
     film_info2={'Diep Vien Bao Thu':'Time: 114 minutes'}
     film_info3={'Diep Vien Bao Thu':'Quality: HD'}
-    speech = "Infomation" + filmname + ":" + str(film_info[filmname]) + str(film_info2[filmname])+ str(film_info3[filmname])
+    speech = "Thông Tin Phim:"+"\t\n Tên Phim:\t" + filmname + "\t\nLink:\t" + str(film_info[filmname]) + "\t\nThời Lượng:\t"+ str(film_info2[filmname])+"\t\nChất Lượng:\t"+ str(film_info3[filmname])
     print("Response:")
     print(speech)
     return {
